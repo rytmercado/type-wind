@@ -4,11 +4,7 @@ import './App.css';
 function App() {
   const [counter, setCounter] = useState(0);
 
-  const increment = (num : number) => {
-
-    setCounter(counter + num);
-  }
-  
+  const increment = (num : number) => setCounter(counter + num);
 
   return (
   <div className="grid h-screen place-items-center">
@@ -18,7 +14,7 @@ function App() {
           {counter}
       </h1>
       <button onClick={() => increment(1)}>+</button>
-    </div>
+    </div>  
   </div>
   );
 }
